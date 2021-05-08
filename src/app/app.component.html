@@ -45,6 +45,13 @@
       <hr />
       <p appBasicHighlight>Style me with basic directive!</p>
       <p [appBetterHighlight]="'red'" defaultColor="yellow">Style me with a better directive!</p>
+      <div [ngSwitch]="value">
+        <p *ngSwitchCase="10">Value is {{ value }}</p>
+        <p *ngSwitchCase="20">Value is {{ value }}</p>
+        <p *ngSwitchCase="50">Value is {{ value }}</p>
+        <p *ngSwitchCase="100">Value is {{ value }}</p>
+        <p *ngSwitchDefault>Value is {{ value }}</p>
+      </div>
     </div>
   </div>
 </div>
